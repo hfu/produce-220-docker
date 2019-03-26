@@ -1,9 +1,4 @@
-#
-
-# docker build -no-cache -t produce-220:latest .
-# docker run -it --rm -v //d:/export produce-220:latest bash
-
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 RUN apt-get update && apt-get -y upgrade \
   && apt-get -y install apt-transport-https ca-certificates \
   && apt-get -y install build-essential libsqlite3-dev zlib1g-dev \
